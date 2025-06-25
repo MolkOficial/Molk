@@ -145,9 +145,13 @@ footer.redes a:hover {
 }
 
 .hiperlandia {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     border-radius: 20px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    height: auto;
+    display: block;
+    margin: 20px auto;
 }
 
 @keyframes fadeIn {
