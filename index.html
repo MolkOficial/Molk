@@ -58,9 +58,29 @@
             <a href="https://discord.gg/JhgJuYRcuP" target="_blank" aria-label="Servidor de Discord"><i class="fab fa-discord"></i></a>
         </footer>
 
-
+        <button id="switchBtn1" class="switchBtn" style="margin-top:20px;">Mis Configuraciones</button>
+    </div>
+    <div id="container2" class="container" style="display:none;">
+        <h1 class="titulo">Molk Dot Files</h1>
+        <h2 class="presentacion">Proximamente.</h2>
+        <img src="hiperlandia.png" class="hiperlandia">
+        <button id="switchBtn2" class="switchBtn" style="margin-top:20px;">Volver</button>
+    </div>
+    <script>
+        const container1 = document.getElementById('container1');
+        const container2 = document.getElementById('container2');
+        const switchBtn1 = document.getElementById('switchBtn1');
+        const switchBtn2 = document.getElementById('switchBtn2');
+        switchBtn1.onclick = () => {
+            container1.style.display = 'none';
+            container2.style.display = '';
+        };
+        switchBtn2.onclick = () => {
+            container2.style.display = 'none';
+            container1.style.display = '';
+        };
+    </script>
         </div>
-
 </body>
 </html>
 
