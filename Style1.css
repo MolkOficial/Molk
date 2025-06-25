@@ -24,7 +24,7 @@ body::before {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.274); 
-    z-index: 0; 
+    z-index: 0;
 }
 
 .container {
@@ -125,6 +125,31 @@ footer.redes a:hover {
     transform: scale(1.2);
 }
 
+.switchBtn {
+    display: block;
+    margin: 30px auto 0 auto;
+    padding: 14px 40px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    z-index: 2;
+}
+
+.switchBtn:hover, .switchBtn:active {
+    transform: scale(1.08);
+}
+
+.hiperlandia {
+    width: 800px;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -153,7 +178,7 @@ footer.redes a:hover {
         padding: 20px 15px;
         max-width: 100%;
         box-shadow: none;
-        border-radius: 20px;
+        border-radius: 10px;
     }
 
     .titulo {
@@ -190,6 +215,12 @@ footer.redes a:hover {
         font-size: 24px;
         margin: 8px;
     }
+
+    .switchBtn {
+        font-size: 18px;
+        padding: 10px 20px;
+        border-radius: 12px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -210,5 +241,10 @@ footer.redes a:hover {
         font-size: 20px;
         margin: 5px;
     }
-}
 
+    .switchBtn {
+        font-size: 16px;
+        padding: 8px 12px;
+        border-radius: 8px;
+    }
+}
