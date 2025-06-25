@@ -140,3 +140,75 @@ footer.redes a:hover {
         transform: translateY(0);
     }
 }
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        background-size: cover; 
+    }
+
+    .container {
+        padding: 20px 15px;
+        max-width: 100%;
+        box-shadow: none;
+        border-radius: 10px;
+    }
+
+    .titulo {
+        font-size: 40px;
+        padding: 8px 20px;
+        margin-bottom: 20px;
+    }
+
+    .presentacion {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .subtitulo, h2 {
+        font-size: 22px;
+        margin-top: 20px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr; 
+        gap: 15px;
+    }
+
+    .galeria img {
+        max-width: 90%;
+    }
+
+    footer.redes {
+        padding: 10px 0;
+        border-radius: 10px;
+    }
+
+    footer.redes a {
+        font-size: 24px;
+        margin: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 32px;
+        padding: 6px 15px;
+    }
+
+    .presentacion, .subtitulo, h2 {
+        font-size: 18px;
+    }
+
+    .galeria img {
+        max-width: 100%;
+    }
+
+    footer.redes a {
+        font-size: 20px;
+        margin: 5px;
+    }
+}
+
